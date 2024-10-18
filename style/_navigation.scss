@@ -32,25 +32,24 @@
     position: fixed;
     right: -100%;
     top: 78px;
-    background-color: #FFF5EF;
-    transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
     width: 100%;
     text-align: center;
 }
 .mobile-navigation-links.active {
     right: 0;
-    background-color: #FFF5EF;
+    background-color: #261F1B;
+    min-height: 100vh;
 }
 .mobile-navigation-links ul li {
-    padding: 10px;
+    padding: 28px;
+    border-bottom-color: #261F1B;
 }
-.mobile-navigation-links ul li:hover,
-.mobile-navigation-links ul li:hover a {
-    background-color: #261F1B;
-    color: #FFF5EF;
+.mobile-navigation-links ul li:hover {
+    border-bottom: 1px solid #FFF5EF;
 }
 .mobile-navigation-links ul li a {
-    color: #261F1B;
+    color: #FFF5EF;
 }
 @media (max-width:992px) {
     .cta-button,
@@ -83,5 +82,8 @@
     }
     .navigation-wrapper .logo-wrapper {
         font-size: 1.2em;
+    }
+    .hamburger-menu-wrapper span.active {
+        transition: .3s ease-in-out;
     }
 }
