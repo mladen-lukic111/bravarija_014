@@ -65,12 +65,12 @@ ul {
   transition: 0.3s ease-in-out;
   width: 100%;
   text-align: center;
+  min-height: 100vh;
 }
 
 .mobile-navigation-links.active {
   right: 0;
   background-color: #261F1B;
-  min-height: 100vh;
 }
 
 .mobile-navigation-links ul li {
