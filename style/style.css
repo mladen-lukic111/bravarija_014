@@ -118,6 +118,7 @@ ul {
   .navigation-wrapper .logo-wrapper {
     font-size: 1.2em;
   }
+  .hamburger-menu-wrapper span,
   .hamburger-menu-wrapper span.active {
     transition: 0.3s ease-in-out;
   }
