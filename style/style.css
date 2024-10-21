@@ -22,11 +22,28 @@ ul {
   list-style-type: none;
 }
 
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.cta-button {
+  padding: 0.6em 1em;
+  background-color: #3F1D0B;
+  color: #FFF;
+}
+
+.light-logo {
+  color: #D9CAC1;
+  font-weight: 600;
+}
+
 .navigation-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6em 2.4em;
+  padding: 1.6em 0;
   font-weight: 500;
   color: #261F1B;
   border-bottom: 1px solid #261F1B;
@@ -46,12 +63,6 @@ ul {
 .desktop-navigation-links ul li a {
   font-size: 1.25em;
   color: #261F1B;
-}
-
-.navigation-wrapper .cta-button {
-  padding: 0.4em 1em;
-  background-color: #673E0F;
-  color: #FFF;
 }
 
 .hamburger-menu-wrapper {
@@ -122,4 +133,25 @@ ul {
   .hamburger-menu-wrapper span.active {
     transition: 0.3s ease-in-out;
   }
+}
+.hero-section {
+  padding: 10% 0;
+}
+
+.hero-section .hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-section .hero-wrapper .text-part .intro-description {
+  color: #261F1B;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
+
+.hero-section .hero-wrapper .image-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

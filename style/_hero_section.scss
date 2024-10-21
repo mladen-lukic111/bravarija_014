@@ -1,0 +1,18 @@
+.hero-section {
+    padding: 10% 0;
+}
+.hero-section .hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hero-section .hero-wrapper .text-part .intro-description {
+    color: #261F1B;
+    opacity: 0.6;
+    margin-bottom: 16px;
+}
+.hero-section .hero-wrapper .image-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
