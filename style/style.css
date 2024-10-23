@@ -98,7 +98,7 @@ h1 {
 }
 
 @media (max-width: 992px) {
-  .cta-button,
+  .navigation-wrapper .cta-button,
   .desktop-navigation-links {
     display: none;
   }
@@ -154,4 +154,15 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .hero-section .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section .hero-wrapper .text-part {
+    text-align: center;
+    margin-bottom: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */
