@@ -47,6 +47,9 @@
     color: #FFF5EF;
 }
 @media (max-width:992px) {
+    .navigation-wrapper {
+        padding: 1.6em 1em;
+    }
     .navigation-wrapper .cta-button,
     .desktop-navigation-links {
         display: none;

@@ -98,6 +98,9 @@ h1 {
 }
 
 @media (max-width: 992px) {
+  .navigation-wrapper {
+    padding: 1.6em 1em;
+  }
   .navigation-wrapper .cta-button,
   .desktop-navigation-links {
     display: none;
@@ -164,5 +167,27 @@ h1 {
   .hero-section .hero-wrapper .text-part {
     text-align: center;
     margin-bottom: 5%;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+  }
+  .hero-section {
+    padding: 10% 5%;
+  }
+  .hero-section .hero-wrapper .text-part .intro-description {
+    max-width: 450px;
+    margin: 1em auto 2em;
+  }
+  .hero-section .hero-wrapper .text-part .contact-btn-wrapper {
+    margin-top: 2em;
+  }
+  .hero-section .hero-wrapper .image-part {
+    width: 55%;
+    margin-top: 4em;
+  }
+  .hero-section .hero-wrapper .image-part img {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
