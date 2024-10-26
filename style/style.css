@@ -72,6 +72,7 @@ h1 {
 
 .mobile-navigation-links {
   position: fixed;
+  z-index: 1;
   right: -100%;
   top: 78px;
   transition: 0.3s ease-in-out;
