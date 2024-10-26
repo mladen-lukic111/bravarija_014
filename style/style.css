@@ -161,6 +161,28 @@ h1 {
   align-items: center;
 }
 
+.hero-section .hero-wrapper .image-part img.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform: translateY(20px);
+}
+
+.hero-section .hero-wrapper .image-part img.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-section .hero-wrapper .text-part {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.hero-section .hero-wrapper .text-part.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 @media (max-width: 1200px) {
   .hero-section .hero-wrapper {
     flex-direction: column;
