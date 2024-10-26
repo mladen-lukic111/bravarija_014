@@ -48,13 +48,14 @@
 }
 @media (max-width:992px) {
     .navigation-wrapper {
-        padding: 1.6em 1em;
+        padding: 1.6em;
     }
     .navigation-wrapper .cta-button,
     .desktop-navigation-links {
         display: none;
     }
     .hamburger-menu-wrapper {
+        margin-top: 5px;
         display: block;
         width: 35px;
         position: relative;
