@@ -162,28 +162,38 @@ h1 {
   align-items: center;
 }
 
+/* Animation after 1 second on the site loading */
 .hero-section .hero-wrapper .image-part img.fade-in {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  transform: translateY(20px);
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
-.hero-section .hero-wrapper .image-part img.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* Animation for text slide */
 .hero-section .hero-wrapper .text-part {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 1s ease-in-out;
+  animation-name: fade-text;
+  animation-duration: 2s;
 }
 
-.hero-section .hero-wrapper .text-part.visible {
-  transform: translateX(0);
-  opacity: 1;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
+@keyframes fade-text {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 1200px) {
   .hero-section .hero-wrapper {
     flex-direction: column;
