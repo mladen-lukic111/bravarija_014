@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red   ;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -22,13 +23,31 @@ h1 {
     line-height: 1.2em;
     font-weight: 600;
 }
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
 .cta-button {
     padding: 0.6em 1em;
     background-color: #3F1D0B;
-    color: #FFF;
+    color: #FFF5EF;
+    font-weight: 600;
+}
+.cta-button-v2 {
+    background-color: #FFF5EF;
+    color: #3F1D0B;
 }
 .light-logo {
     color: #D9CAC1;
     font-weight: 600;
     margin-bottom: 2px;
+}
+.dark-logo {
+    color: #FFF5EF;
+    font-weight: 600;
+    margin-bottom: 2px;
+    opacity: 0.2;
+}
+.contact-btn-wrapper {
+    padding-top: 12px;
 }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -28,16 +29,38 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
 .cta-button {
   padding: 0.6em 1em;
   background-color: #3F1D0B;
-  color: #FFF;
+  color: #FFF5EF;
+  font-weight: 600;
+}
+
+.cta-button-v2 {
+  background-color: #FFF5EF;
+  color: #3F1D0B;
 }
 
 .light-logo {
   color: #D9CAC1;
   font-weight: 600;
   margin-bottom: 2px;
+}
+
+.dark-logo {
+  color: #FFF5EF;
+  font-weight: 600;
+  margin-bottom: 2px;
+  opacity: 0.2;
+}
+
+.contact-btn-wrapper {
+  padding-top: 12px;
 }
 
 .navigation-wrapper {
@@ -140,6 +163,7 @@ h1 {
     transition: 0.3s ease-in-out;
   }
 }
+/* Hero section start*/
 .hero-section {
   padding: 10% 0;
 }
@@ -162,7 +186,7 @@ h1 {
   align-items: center;
 }
 
-/* Animation after 1 second on the site loading */
+/* Animation for image*/
 .hero-section .hero-wrapper .image-part img.fade-in {
   animation-name: fade-in;
   animation-duration: 2s;
@@ -174,6 +198,37 @@ h1 {
   animation-duration: 2s;
 }
 
+/* Hero section end*/
+/*--------------------------------------------------------------------*/
+/* About us section start */
+.about-us .about-us-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us .about-us-wrapper img {
+  width: 60%;
+}
+
+.about-us .about-us-wrapper .about-us-text {
+  padding: 1.5em 1.5em 4em 1.5em;
+  background-color: #3F1D0B;
+  margin-left: -5px;
+}
+
+.about-us .about-us-wrapper .about-us-text h2,
+.about-us .about-us-wrapper .about-us-text .text {
+  color: #FFF5EF;
+}
+
+.about-us .about-us-wrapper .about-us-text .text {
+  margin-bottom: 12px;
+}
+
+/* About us section end */
+/*--------------------------------------------------------------------*/
+/* Animations start */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -194,14 +249,23 @@ h1 {
     opacity: 1;
   }
 }
+/* Animations end */
+/*--------------------------------------------------------------------*/
+/* Media queries start */
 @media (max-width: 1200px) {
-  .hero-section .hero-wrapper {
+  .hero-section .hero-wrapper,
+  .about-us .about-us-wrapper {
     flex-direction: column;
     align-items: center;
   }
   .hero-section .hero-wrapper .text-part {
     text-align: center;
     margin-bottom: 5%;
+  }
+  .about-us .about-us-wrapper .about-us-text {
+    max-width: 600px;
+    text-align: center;
+    margin-top: -2px;
   }
 }
 @media (max-width: 768px) {
@@ -226,4 +290,9 @@ h1 {
   .hero-section .hero-wrapper .image-part img {
     width: 80%;
   }
-}/*# sourceMappingURL=style.css.map */
+  .about-us .about-us-wrapper .about-us-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* Media queries end *//*# sourceMappingURL=style.css.map */

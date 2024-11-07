@@ -1,3 +1,4 @@
+/* Hero section start*/
 .hero-section {
     padding: 10% 0;
 }
@@ -17,7 +18,7 @@
     align-items: center;
 }
 
-/* Animation after 1 second on the site loading */
+/* Animation for image*/
 .hero-section .hero-wrapper .image-part img.fade-in {
     animation-name: fade-in;
     animation-duration: 2s;
@@ -26,7 +27,38 @@
 .hero-section .hero-wrapper .text-part {
     animation-name: fade-text;
     animation-duration: 2s;
-} 
+}
+/* Hero section end*/
+
+/*--------------------------------------------------------------------*/
+
+/* About us section start */
+.about-us .about-us-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .about-us-wrapper img {
+    width: 60%;
+}
+.about-us .about-us-wrapper .about-us-text {
+    padding: 1.5em 1.5em 4em 1.5em;
+    background-color: #3F1D0B;
+    margin-left: -5px;
+}
+.about-us .about-us-wrapper .about-us-text h2,
+.about-us .about-us-wrapper .about-us-text .text {
+    color: #FFF5EF;
+}
+.about-us .about-us-wrapper .about-us-text .text {
+    margin-bottom: 12px;
+}
+/* About us section end */
+
+
+/*--------------------------------------------------------------------*/
+
+/* Animations start */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -48,14 +80,25 @@
         opacity: 1;
     }
 }
+/* Animations end */
+
+/*--------------------------------------------------------------------*/
+
+/* Media queries start */
 @media (max-width:1200px) {
-    .hero-section .hero-wrapper {
+    .hero-section .hero-wrapper,
+    .about-us .about-us-wrapper {
         flex-direction: column;
         align-items: center;
     } 
     .hero-section .hero-wrapper .text-part {
         text-align: center;
         margin-bottom: 5%;
+    }
+    .about-us .about-us-wrapper .about-us-text {
+        max-width: 600px;
+        text-align: center;
+        margin-top: -2px;
     }
 }
 @media (max-width: 768px) {
@@ -80,4 +123,9 @@
     .hero-section .hero-wrapper .image-part img {
         width: 80%;
     }
+    .about-us .about-us-wrapper .about-us-text {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
+/* Media queries end */
