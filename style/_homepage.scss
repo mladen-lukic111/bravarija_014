@@ -55,6 +55,38 @@
 }
 /* About us section end */
 
+/* Our work section start */
+.our-work {
+    text-align: center;
+}
+.our-work .info-text {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6em;
+}
+.our-work .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-top: 2em;
+}
+.our-work .cards-wrapper .single-card {
+    border: 1px solid #3F1D0B;
+    padding: 12px 12px 48px 12px;
+}
+.our-work .cards-wrapper .single-card .image-wrapper {
+    border: 1px solid #3F1D0B;
+    padding: 12px;
+}
+.our-work .cards-wrapper .single-card .image-wrapper img {
+    object-fit: cover;
+}
+.our-work .cards-wrapper .single-card .description {
+    font-size: 1.1em;
+}
+/* Our work section end */
+
 
 /*--------------------------------------------------------------------*/
 
