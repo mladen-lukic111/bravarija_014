@@ -241,13 +241,18 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4em;
-  margin-top: 2em;
+  gap: 2em;
+  margin: 2em 0;
 }
 
 .our-work .cards-wrapper .single-card {
   border: 1px solid #3F1D0B;
   padding: 12px 12px 48px 12px;
+}
+
+.our-work .cards-wrapper .single-card.brown-card {
+  background-color: #3F1D0B;
+  color: #FFF5EF;
 }
 
 .our-work .cards-wrapper .single-card .image-wrapper {
@@ -261,7 +266,7 @@ h2 {
 }
 
 .our-work .cards-wrapper .single-card .description {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 /* Our work section end */
