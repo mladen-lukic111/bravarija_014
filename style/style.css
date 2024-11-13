@@ -26,6 +26,7 @@ h1 {
   font-size: 2.5em;
   line-height: 1.2em;
   font-weight: 600;
+  margin-bottom: 0.4em;
 }
 
 h2 {
@@ -229,12 +230,18 @@ h2 {
 /* Our work section start */
 .our-work {
   text-align: center;
+  padding: 5% 0;
+}
+
+.our-work h2 {
+  color: #261F1B;
 }
 
 .our-work .info-text {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6em;
+  font-weight: 300;
 }
 
 .our-work .cards-wrapper {
@@ -247,7 +254,7 @@ h2 {
 
 .our-work .cards-wrapper .single-card {
   border: 1px solid #3F1D0B;
-  padding: 12px 12px 48px 12px;
+  padding: 24px 24px 48px 24px;
 }
 
 .our-work .cards-wrapper .single-card.brown-card {
@@ -260,6 +267,16 @@ h2 {
   padding: 12px;
 }
 
+.our-work .cards-wrapper .single-card.brown-card .image-wrapper {
+  border-color: #FFF5EF;
+}
+
+.our-work .cards-wrapper .single-card h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 10px;
+}
+
 .our-work .cards-wrapper .single-card .image-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -267,6 +284,7 @@ h2 {
 
 .our-work .cards-wrapper .single-card .description {
   font-size: 0.9em;
+  opacity: 0.6;
 }
 
 /* Our work section end */
@@ -295,6 +313,11 @@ h2 {
 /* Animations end */
 /*--------------------------------------------------------------------*/
 /* Media queries start */
+@media (max-width: 1400px) {
+  .our-work .cards-wrapper {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 1200px) {
   .hero-section .hero-wrapper,
   .about-us .about-us-wrapper {
