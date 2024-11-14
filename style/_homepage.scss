@@ -91,11 +91,6 @@
 .our-work .cards-wrapper .single-card.brown-card .image-wrapper {
     border-color: #FFF5EF;
 }
-.our-work .cards-wrapper .single-card h3 {
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 10px;
-}
 .our-work .cards-wrapper .single-card .image-wrapper img {
     object-fit: cover;
 }
@@ -104,6 +99,35 @@
     opacity: 0.6;
 }
 /* Our work section end */
+
+/* Contact section start */
+.contact-section {
+    background-color: #3F1D0B;
+    color: #FFF5EF;
+    padding: 5% 0;
+    text-align: center;
+}
+.contact-section .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section .contact-wrapper > div {
+    flex-basis: 33.33%;
+}
+.contact-section .contact-wrapper .contact-block p {
+    margin-bottom: 1em;   
+}
+.contact-section .contact-wrapper .contact-block .icon img {
+    position: relative;
+    top: 4px;
+    right: 8px;
+}
+.contact-section .contact-wrapper .activity-block p {
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+/* Contact section end */
 
 
 /*--------------------------------------------------------------------*/
@@ -154,6 +178,15 @@
         max-width: 600px;
         text-align: center;
         margin-top: -2px;
+    }
+}
+@media (max-width: 1024px) {
+    .contact-section .contact-wrapper {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .contact-section .contact-wrapper .logo-block {
+        max-width: 450px;
     }
 }
 @media (max-width: 768px) {
