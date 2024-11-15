@@ -104,8 +104,11 @@
 .contact-section {
     background-color: #3F1D0B;
     color: #FFF5EF;
-    padding: 5% 0;
+    padding: 1% 0;
     text-align: center;
+}
+.contact-section .container-default-with-line {
+    border-bottom-color: rgba(#FFF5EF, 0.2);
 }
 .contact-section .contact-wrapper {
     display: flex;
@@ -126,6 +129,15 @@
 .contact-section .contact-wrapper .activity-block p {
     text-transform: uppercase;
     margin-bottom: 0.5em;
+}
+.contact-section .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.contact-section .social img {
+    margin-right: 4px;
 }
 /* Contact section end */
 
