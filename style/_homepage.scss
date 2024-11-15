@@ -114,6 +114,7 @@
 }
 .contact-section .container-default-with-line {
     border-bottom-color: rgba(#FFF5EF, 0.2);
+    padding-bottom: 2em;
 }
 .contact-section .contact-wrapper {
     display: flex;
@@ -210,6 +211,12 @@
     h1 {
         font-size: 1.25em;
     }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
     .hero-section {
         padding: 10% 5%;
     }
@@ -231,6 +238,16 @@
     .about-us .about-us-wrapper .about-us-text {
         width: 100%;
         margin: 0 auto;
+    }
+    .container-default-with-line {
+        padding-bottom: 4em;
+    }
+    .contact-section .container-default-with-line {
+        padding: 1em 0;
+    }
+    .about-us .about-us-wrapper img {
+        width: 80%;
+        margin-bottom: 3em;
     }
 }
 /* Media queries end */
