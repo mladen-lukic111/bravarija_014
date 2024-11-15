@@ -23,6 +23,7 @@
     animation-name: fade-in;
     animation-duration: 2s;
 }
+
 /* Animation for text slide */
 .hero-section .hero-wrapper .text-part {
     animation-name: fade-text;
@@ -40,11 +41,15 @@
 }
 .about-us .about-us-wrapper img {
     width: 60%;
+    animation-name: fade-in;
+    animation-duration: 2s;
 }
 .about-us .about-us-wrapper .about-us-text {
     padding: 1.5em 1.5em 4em 1.5em;
     background-color: #3F1D0B;
     margin-left: -5px;
+    animation-name: fade-text;
+    animation-duration: 2s;
 }
 .about-us .about-us-wrapper .about-us-text h2,
 .about-us .about-us-wrapper .about-us-text .text {

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFF5EF;
@@ -41,6 +44,11 @@ h3 {
     background-color: #3F1D0B;
     color: #FFF5EF;
     font-weight: 600;
+    display: inline-block;
+    transition: all .3s;
+}
+.cta-button:hover {
+    transform: scale(1.1);
 }
 .cta-button-v2 {
     background-color: #FFF5EF;

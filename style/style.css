@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #FFF5EF;
@@ -50,6 +54,12 @@ h3 {
   background-color: #3F1D0B;
   color: #FFF5EF;
   font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
 }
 
 .cta-button-v2 {
@@ -220,12 +230,16 @@ h3 {
 
 .about-us .about-us-wrapper img {
   width: 60%;
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
 .about-us .about-us-wrapper .about-us-text {
   padding: 1.5em 1.5em 4em 1.5em;
   background-color: #3F1D0B;
   margin-left: -5px;
+  animation-name: fade-text;
+  animation-duration: 2s;
 }
 
 .about-us .about-us-wrapper .about-us-text h2,
