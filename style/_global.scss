@@ -1,3 +1,12 @@
+// Variables
+
+$font-family: 'Poppins', sans-serif;
+$primary-color: #3F1D0B;
+$secondary-color: #FFF5EF;
+$light-gray: #D9CAC1;
+$border-color: rgba($primary-color, 0.2);
+
+// Reset
 * {
     margin: 0;
     padding: 0;
@@ -7,23 +16,27 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFF5EF;
+    font-family: $font-family;
+    background-color: $secondary-color;
 }
 a {
     text-decoration: none;
 }
+ul {
+    list-style-type: none;
+}
+
+// Containers
 .container-default {
     max-width: 1140px;
     margin: 0 auto;
 }
 .container-default-with-line {
-    border-bottom: 2px solid rgba(#3F1D0B, 0.2);
+    border-bottom: 2px solid $border-color;
     padding-bottom: 8em;
 }
-ul {
-    list-style-type: none;
-}
+
+// Headings
 h1 {
     font-size: 2.5em;
     line-height: 1.2em;
@@ -39,32 +52,40 @@ h3 {
     font-weight: 500;
     margin: 10px;
 }
-.cta-button {
+
+// Buttons
+@mixin button-default($bg-color, $text-color) {
     padding: 0.6em 1em;
-    background-color: #3F1D0B;
-    color: #FFF5EF;
+    background-color: $bg-color;
+    color: $text-color;
     font-weight: 600;
     display: inline-block;
     transition: all .3s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
-.cta-button:hover {
-    transform: scale(1.1);
+.cta-button {
+    @include button-default($primary-color, $secondary-color);
 }
 .cta-button-v2 {
-    background-color: #FFF5EF;
-    color: #3F1D0B;
+    @include button-default($secondary-color, $primary-color);
 }
+
+// Brand colors / logo
 .light-logo {
-    color: #D9CAC1;
+    color: $light-gray;
     font-weight: 600;
     margin-bottom: 2px;
 }
 .dark-logo {
-    color: #FFF5EF;
+    color: $secondary-color;
     font-weight: 600;
     margin-bottom: 2px;
     opacity: 0.2;
 }
+
+// Custom
 .contact-btn-wrapper {
     padding-top: 12px;
 }
