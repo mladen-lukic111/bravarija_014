@@ -1,9 +1,11 @@
 // Variables
 
 $font-family: 'Poppins', sans-serif;
+$font-family-2: 'Montserrat', sans-serif;
 $primary-color: #3F1D0B;
 $secondary-color: #FFF5EF;
 $light-gray: #D9CAC1;
+$dark-gray: #261F1B;
 $border-color: rgba($primary-color, 0.2);
 
 // Reset
@@ -38,10 +40,10 @@ ul {
 
 // Headings
 h1 {
-    font-size: 2.5em;
-    line-height: 1.2em;
-    font-weight: 600;
-    margin-bottom: 0.4em;
+    font-size: 4.6em;
+    line-height: 1em;
+    font-family: $font-family-2;
+    font-weight: 700;
 }
 h2 {
     font-size: 2em;
@@ -51,11 +53,12 @@ h3 {
     text-transform: uppercase;
     font-weight: 500;
     margin: 10px;
+    font-size: 1.5em;
 }
 
 // Buttons
 @mixin button-default($bg-color, $text-color) {
-    padding: 0.6em 1em;
+    padding: 0.6em 3.8em;
     background-color: $bg-color;
     color: $text-color;
     font-weight: 600;
@@ -77,15 +80,11 @@ h3 {
     color: $light-gray;
     font-weight: 600;
     margin-bottom: 2px;
+    font-size: 1.25em;
 }
 .dark-logo {
     color: $secondary-color;
     font-weight: 600;
     margin-bottom: 2px;
     opacity: 0.2;
-}
-
-// Custom
-.contact-btn-wrapper {
-    padding-top: 12px;
 }

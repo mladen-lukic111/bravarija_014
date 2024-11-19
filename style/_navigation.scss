@@ -4,8 +4,8 @@
     align-items: center;
     padding: 1.6em 0;
     font-weight: 500;
-    color: #261F1B;
-    border-bottom: 1px solid #261F1B;
+    color: $dark-gray;
+    border-bottom: 1px solid $dark-gray;
 }
 .navigation-wrapper .logo-wrapper {
     font-size: 1.5em;
@@ -18,7 +18,7 @@
 }
 .desktop-navigation-links ul li a {
     font-size: 1.25em;
-    color: #261F1B;
+    color: $dark-gray;
     display: inline-block;
     transition: all .3s;
 }
@@ -40,11 +40,11 @@
 }
 .mobile-navigation-links.active {
     right: 0;
-    background-color: #261F1B;
+    background-color: $dark-gray;
 }
 .mobile-navigation-links ul li {
     padding: 28px;
-    border-bottom-color: #261F1B;
+    border-bottom-color: $dark-gray;
 }
 .mobile-navigation-links ul li:hover {
     border-bottom: 1px solid #FFF5EF;
@@ -75,7 +75,7 @@
         display: block;
         height: 2px;
         border-radius: 5%;
-        background-color: #261F1B;
+        background-color: $dark-gray;
         width: 100%;
         margin-bottom: 7px;
     }

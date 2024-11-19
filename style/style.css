@@ -32,10 +32,10 @@ ul {
 }
 
 h1 {
-  font-size: 2.5em;
-  line-height: 1.2em;
-  font-weight: 600;
-  margin-bottom: 0.4em;
+  font-size: 4.6em;
+  line-height: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 h2 {
@@ -47,10 +47,11 @@ h3 {
   text-transform: uppercase;
   font-weight: 500;
   margin: 10px;
+  font-size: 1.5em;
 }
 
 .cta-button {
-  padding: 0.6em 1em;
+  padding: 0.6em 3.8em;
   background-color: #3F1D0B;
   color: #FFF5EF;
   font-weight: 600;
@@ -62,7 +63,7 @@ h3 {
 }
 
 .cta-button-v2 {
-  padding: 0.6em 1em;
+  padding: 0.6em 3.8em;
   background-color: #FFF5EF;
   color: #3F1D0B;
   font-weight: 600;
@@ -77,6 +78,7 @@ h3 {
   color: #D9CAC1;
   font-weight: 600;
   margin-bottom: 2px;
+  font-size: 1.25em;
 }
 
 .dark-logo {
@@ -84,10 +86,6 @@ h3 {
   font-weight: 600;
   margin-bottom: 2px;
   opacity: 0.2;
-}
-
-.contact-btn-wrapper {
-  padding-top: 12px;
 }
 
 .navigation-wrapper {
@@ -203,7 +201,7 @@ h3 {
 }
 /* Hero section start*/
 .hero-section {
-  padding: 10% 0;
+  padding: 8% 0;
 }
 
 .hero-section .hero-wrapper {
@@ -212,10 +210,18 @@ h3 {
   align-items: flex-start;
 }
 
+.hero-section .hero-wrapper .text-part {
+  margin-right: 42px;
+}
+
+.hero-section .hero-wrapper .text-part .light-logo {
+  margin-top: 80px;
+}
+
 .hero-section .hero-wrapper .text-part .intro-description {
   color: #261F1B;
   opacity: 0.6;
-  margin-bottom: 16px;
+  margin: 12px 0 24px 0;
 }
 
 .hero-section .hero-wrapper .image-part {
@@ -252,7 +258,7 @@ h3 {
 }
 
 .about-us .about-us-wrapper .about-us-text {
-  padding: 1.5em 1.5em 4em 1.5em;
+  padding: 3em 2em 3em 2em;
   background-color: #3F1D0B;
   margin-left: -5px;
   animation-name: fade-text;
@@ -295,27 +301,19 @@ h3 {
 }
 
 .our-work .cards-wrapper .single-card {
-  border: 1px solid #3F1D0B;
-  padding: 24px 24px 48px 24px;
-}
-
-.our-work .cards-wrapper .single-card.brown-card {
   background-color: #3F1D0B;
   color: #FFF5EF;
+  padding: 24px 24px 48px 24px;
+  width: 380px;
 }
 
 .our-work .cards-wrapper .single-card .image-wrapper {
-  border: 1px solid #3F1D0B;
+  border: 1px solid #FFF5EF;
   padding: 12px;
 }
 
-.our-work .cards-wrapper .single-card.brown-card .image-wrapper {
-  border-color: #FFF5EF;
-}
-
 .our-work .cards-wrapper .single-card .image-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
 
 .our-work .cards-wrapper .single-card .description {
@@ -328,7 +326,7 @@ h3 {
 .contact-section {
   background-color: #3F1D0B;
   color: #FFF5EF;
-  padding: 1% 0;
+  padding: 1.35% 0 0.8% 0;
   text-align: center;
 }
 
@@ -341,6 +339,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10em;
 }
 
 .contact-section .contact-wrapper > div {
@@ -359,18 +358,22 @@ h3 {
 
 .contact-section .contact-wrapper .activity-block p {
   text-transform: uppercase;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .contact-section .social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2%;
+  padding-top: 1%;
 }
 
 .contact-section .social img {
   margin-right: 4px;
+}
+
+.contact-section .social img:hover {
+  cursor: pointer;
 }
 
 /* Contact section end */
