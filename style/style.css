@@ -90,10 +90,11 @@ h3 {
 
 .navigation-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1.6em 0;
   font-weight: 500;
+  padding: 1.6em 0;
   color: #261F1B;
   border-bottom: 1px solid #261F1B;
 }
@@ -104,6 +105,7 @@ h3 {
 
 .desktop-navigation-links ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 4em;
@@ -206,6 +208,7 @@ h3 {
 
 .hero-section .hero-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
 }
@@ -226,6 +229,7 @@ h3 {
 
 .hero-section .hero-wrapper .image-part {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -247,6 +251,7 @@ h3 {
 /* About us section start */
 .about-us .about-us-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -294,6 +299,7 @@ h3 {
 
 .our-work .cards-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 2em;
@@ -337,6 +343,7 @@ h3 {
 
 .contact-section .contact-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10em;
@@ -363,6 +370,7 @@ h3 {
 
 .contact-section .social {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 1%;

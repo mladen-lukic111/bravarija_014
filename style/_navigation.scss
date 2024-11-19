@@ -1,9 +1,7 @@
 .navigation-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.6em 0;
+    @include flex-layout(row, space-between, center);
     font-weight: 500;
+    padding: 1.6em 0;
     color: $dark-gray;
     border-bottom: 1px solid $dark-gray;
 }
@@ -11,9 +9,7 @@
     font-size: 1.5em;
 }
 .desktop-navigation-links ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-layout(row, space-between, center);
     gap: 4em;
 }
 .desktop-navigation-links ul li a {

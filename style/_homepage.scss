@@ -3,9 +3,7 @@
     padding: 8% 0;
 }
 .hero-section .hero-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    @include flex-layout(row, center, flex-start);
 }
 .hero-section .hero-wrapper .text-part {
     margin-right: 42px;
@@ -19,9 +17,7 @@
     margin: 12px 0 24px 0;
 }
 .hero-section .hero-wrapper .image-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-layout(row, center, center);
 }
 
 /* Animation for image*/
@@ -41,9 +37,7 @@
 
 /* About us section start */
 .about-us .about-us-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-layout(row, center, center);
 }
 .about-us .about-us-wrapper img {
     width: 60%;
@@ -81,9 +75,7 @@
     font-weight: 300;
 }
 .our-work .cards-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-layout(row, center, center);
     gap: 2em;
     margin: 2em 0;
 }
@@ -118,9 +110,7 @@
     padding-bottom: 2em;
 }
 .contact-section .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-layout(row, center, center);
     gap: 10em;
 }
 .contact-section .contact-wrapper > div {
@@ -139,9 +129,7 @@
     margin-bottom: 1em;
 }
 .contact-section .social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-layout(row, space-between, center);
     padding-top: 1%;
 }
 .contact-section .social img {
