@@ -124,6 +124,9 @@
     top: 4px;
     right: 8px;
 }
+.contact-section .contact-wrapper .contact-block p a:hover {
+    text-decoration: underline;
+}
 .contact-section .contact-wrapper .activity-block p {
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -184,6 +187,10 @@
     .hero-section .hero-wrapper .text-part {
         text-align: center;
         margin-bottom: 5%;
+        margin-right: 0;
+    }
+    .hero-section .hero-wrapper .text-part .light-logo {
+        margin-top: 10px;
     }
     .about-us .about-us-wrapper .about-us-text {
         max-width: 600px;
@@ -202,13 +209,13 @@
 }
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.25em;
+        font-size: 2.9em;
     }
     h2 {
-        font-size: 1em;
+        font-size: 1.8em;
     }
     p {
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .hero-section {
         padding: 10% 5%;
@@ -216,7 +223,7 @@
     .hero-section .hero-wrapper .text-part .intro-description {
         max-width: 450px;
         margin: 1em auto;
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .hero-section .hero-wrapper .text-part .contact-btn-wrapper {
         margin-top: 2em;
@@ -241,6 +248,9 @@
     .about-us .about-us-wrapper img {
         width: 80%;
         margin-bottom: 3em;
+    }
+    .our-work .cards-wrapper .single-card {
+        width: 300px;
     }
 }
 /* Media queries end */
